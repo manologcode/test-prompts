@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+gunicorn
+sqlalchemy
+pydantic
+aiofiles
+goose3
+youtube_transcript_api
