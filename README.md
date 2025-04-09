@@ -24,7 +24,7 @@ primero crear el archivo de la base de datos
 
 correr la app con docker run:
 ```bash
-docker run -d -p 5088:5088 -e LLM_URL=http://192.168.1.69:11434/api/generate -v ./data.db:/app/sql_app.db --name prompts manologcode/prompts
+docker run -d -p 5088:5088 -e LLM_URL=http://192.168.1.69:11434/api/generate -v ./data.db:/app/sql_app.db --name prompts manologcode/test-prompts
 ```
 
 si lo queremos corres con docker compose:
@@ -32,7 +32,7 @@ si lo queremos corres con docker compose:
 ```bash
 services:
   prompts:
-    image: manologcode/prompts
+    image: manologcode/test-prompts
     container_name: prompts
     environment:
       - LLM_URL=http://192.168.1.69:11434/api/generate

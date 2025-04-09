@@ -1,7 +1,7 @@
 
 services:
   prompts:
-    image: manologcode/prompts
+    image: manologcode/test-prompts
     build:
       context: .
       dockerfile: Dockerfile
