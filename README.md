@@ -11,10 +11,9 @@ Una aplicación web que permite gestionar y reutilizar prompts para modelos de l
 - 🎨 Interfaz moderna y responsiva con Tailwind CSS
 - 🔄 Animaciones de carga y feedback visual
 
-## Requisitos
-
-- Docker y Docker Compose
-- Acceso a un servidor LLM (configurable mediante variables de entorno)
+<div align="center">
+  <img src="screenshot.png" alt="Screenshot del Visualizador de Archivos SLT" width="600"/>
+</div>
 
 ## arrancar docker la aplicacion
 

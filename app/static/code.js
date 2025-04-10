@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const modelSelect = document.getElementById('modelSelect');
     const urlTextArea = document.getElementById('urlText');
     const getUrlBtn = document.getElementById('getUrlBtn');
+    const clearUrlBtn = document.getElementById('clearUrlBtn');
     const promptText = document.getElementById('promptText');
     const newPromptBtn = document.getElementById('newPromptBtn');
     const newPromptModal = document.getElementById('newPromptModal');
@@ -26,6 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Event listeners
     getUrlBtn.addEventListener('click', handleUrlText);
+    clearUrlBtn.addEventListener('click', () => {
+        urlTextArea.value = '';
+    });
     newPromptBtn.addEventListener('click', () => {
         isEditing = false;
         currentEditingId = null;
